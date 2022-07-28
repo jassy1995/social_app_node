@@ -1,0 +1,68 @@
+[
+  {
+    "_id": "1",
+    "name": "Nike Slim Shirt",
+    "category": "Shirts",
+    "image": "https://global-uploads.webflow.com/5d556af3fe21d65f602dca94/60f549e4fb792d32617b1579_Group%202.png",
+    "price": 120,
+    "brand": "Nike",
+    "rating": 4.5,
+    "numReviews": 10,
+    "description": "high quality product"
+  },
+  {
+    " _id": "2",
+    "name": "Adidas Fit Shirt",
+    "category": "Shirts",
+    "image": "https://global-uploads.webflow.com/5d556af3fe21d65f602dca94/5fd8bb6068e3972a69580cf1_f5_0008_Toccin%2013.jpg",
+    "price": 100,
+    "brand": "Adidas",
+    "rating": 4.0,
+    "numReviews": 10,
+    "description": "high quality product"
+  },
+  {
+    "_id": "3",
+    "name": "Lacoste Free Shirt",
+    "category": "Shirts",
+    "image": "https://global-uploads.webflow.com/5d556af3fe21d65f602dca94/60ab6ebee8e3aeb0600e4cb9_1.jpg",
+    "price": 220,
+    "brand": "Lacoste",
+    "rating": 4.8,
+    "numReviews": 17,
+    "description": "high quality product"
+  },
+  {
+    "_id": 4,
+    "name": "Nike Slim Pant",
+    "category": "Pants",
+    "image": "https://global-uploads.webflow.com/5d556af3fe21d65f602dca94/60b0ee6dba22e0439fc5bffb_7.jpg",
+    "price": 78,
+    "brand": "Nike",
+    "rating": 0,
+    "numReviews": 14,
+    "description": "high quality product"
+  },
+  {
+    "_id": 5,
+    "name": "Puma Slim Pant",
+    "category": "Pants",
+    "image": "https://global-uploads.webflow.com/5d556af3fe21d65f602dca94/6141e804158596d5aba69000_Group%2027.jpg",
+    "price": 65,
+    "brand": "Puma",
+    "rating": 4.5,
+    "numReviews": 10,
+    "description": "high quality product"
+  },
+  {
+    "_id": 6,
+    "name": "Adidas Fit Pant",
+    "category": "Pants",
+    "image": "https://global-uploads.webflow.com/5d556af3fe21d65f602dca94/6080245c5f493dd3d6c892c2_6.jpg",
+    "price": 139,
+    "brand": "Adidas",
+    "rating": 1.5,
+    "numReviews": 15,
+    "description": "high quality product"
+  }
+]

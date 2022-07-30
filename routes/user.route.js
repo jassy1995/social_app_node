@@ -8,6 +8,7 @@ router.put("/profile", isAuth, controller.updateUserInfo);
 router.put("/follow/:id", isAuth, controller.follow);
 router.put("/unfollow/:id", isAuth, controller.unFollow);
 router.get("/friends", isAuth, controller.getFriends);
+router.get("/by-id/:id", isAuth, controller.getUserById);
 router.get("/:username", [isAuth], controller.getUser);
 router.delete("/:id", [isAuth, isAdmin], controller.deleteUser);
 module.exports = router;

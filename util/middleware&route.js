@@ -8,6 +8,8 @@ const morgan = require("morgan");
 const postRoute = require("../routes/post.route");
 const userRoute = require("../routes/user.route");
 const authRoute = require("../routes/auth.route");
+const conversationRoute = require("../routes/conversation.route");
+const messageRoute = require("../routes/message.route");
 const orderRoute = require("../routes/order.route");
 const taskRoute = require("../routes/task.route");
 const propertyRoute = require("../routes/property.route");
@@ -29,6 +31,8 @@ module.exports = function (app) {
   app.use("/api/post", postRoute);
   app.use("/api/auth", authRoute);
   app.use("/api/user", userRoute);
+  app.use("/api/conversation", conversationRoute);
+  app.use("/api/message", messageRoute);
   app.use("/api/tasks", taskRoute);
   app.use("/api/properties", propertyRoute);
   app.use("/api/orders", orderRoute);

@@ -42,6 +42,16 @@ exports.getUser = async (req, res, next) => {
   }
 };
 
+exports.getUserById = async (req, res, next) => {
+  const user = await User.findById(req.params.id);
+  if (user) {
+    const { password, updatedAt, __v, ...others } = user._doc;
+    return res.send(others);
+  } else {
+    return res.status(404).send({ message: "User Not Found" });
+  }
+};
+
 exports.follow = async (req, res, next) => {
   if (req.params.id !== req.user._id) {
     const userToFollow = await User.findById(req.params.id);

@@ -1,0 +1,310 @@
+{ time: [34m28-07-2022 15:24:17[39m level: [31merror[39m message: uncaughtException: Cannot find module '../controllers/conversation.controller'
+Require stack:
+- /Users/Apple/Desktop/project/social_app/server/routes/conversation.route.js
+- /Users/Apple/Desktop/project/social_app/server/util/middleware&route.js
+- /Users/Apple/Desktop/project/social_app/server/index.js
+Error: Cannot find module '../controllers/conversation.controller'
+Require stack:
+- /Users/Apple/Desktop/project/social_app/server/routes/conversation.route.js
+- /Users/Apple/Desktop/project/social_app/server/util/middleware&route.js
+- /Users/Apple/Desktop/project/social_app/server/index.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/routes/conversation.route.js:2:18)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19) stack: Error: Cannot find module '../controllers/conversation.controller'
+Require stack:
+- /Users/Apple/Desktop/project/social_app/server/routes/conversation.route.js
+- /Users/Apple/Desktop/project/social_app/server/util/middleware&route.js
+- /Users/Apple/Desktop/project/social_app/server/index.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/routes/conversation.route.js:2:18)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19) }
+{ time: [34m28-07-2022 15:25:31[39m level: [31merror[39m message: uncaughtException: Cannot find module '../controllers/message.controller'
+Require stack:
+- /Users/Apple/Desktop/project/social_app/server/routes/message.route.js
+- /Users/Apple/Desktop/project/social_app/server/util/middleware&route.js
+- /Users/Apple/Desktop/project/social_app/server/index.js
+Error: Cannot find module '../controllers/message.controller'
+Require stack:
+- /Users/Apple/Desktop/project/social_app/server/routes/message.route.js
+- /Users/Apple/Desktop/project/social_app/server/util/middleware&route.js
+- /Users/Apple/Desktop/project/social_app/server/index.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/routes/message.route.js:2:18)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19) stack: Error: Cannot find module '../controllers/message.controller'
+Require stack:
+- /Users/Apple/Desktop/project/social_app/server/routes/message.route.js
+- /Users/Apple/Desktop/project/social_app/server/util/middleware&route.js
+- /Users/Apple/Desktop/project/social_app/server/index.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/routes/message.route.js:2:18)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19) }
+{ time: [34m28-07-2022 16:25:58[39m level: [31merror[39m message: uncaughtException: Route.get() requires a callback function but got a [object Undefined]
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/route.js:202:15)
+    at Function.proto.<computed> [as get] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/index.js:516:19)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/routes/conversation.route.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/util/middleware&route.js:11:27) stack: Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/route.js:202:15)
+    at Function.proto.<computed> [as get] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/index.js:516:19)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/routes/conversation.route.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/util/middleware&route.js:11:27) }
+{ time: [34m28-07-2022 16:42:24[39m level: [31merror[39m message: uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/route.js:202:15)
+    at Function.proto.<computed> [as post] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/index.js:516:19)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/routes/message.route.js:6:8)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/util/middleware&route.js:12:22) stack: Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/route.js:202:15)
+    at Function.proto.<computed> [as post] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/index.js:516:19)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/routes/message.route.js:6:8)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/util/middleware&route.js:12:22) }
+{ time: [34m28-07-2022 16:43:22[39m level: [31merror[39m message: uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/route.js:202:15)
+    at Function.proto.<computed> [as post] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/index.js:516:19)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/routes/message.route.js:6:8)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/util/middleware&route.js:12:22) stack: Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/route.js:202:15)
+    at Function.proto.<computed> [as post] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/index.js:516:19)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/routes/message.route.js:6:8)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/util/middleware&route.js:12:22) }
+{ time: [34m28-07-2022 16:45:02[39m level: [31merror[39m message: uncaughtException: Route.get() requires a callback function but got a [object Undefined]
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/route.js:202:15)
+    at Function.proto.<computed> [as get] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/index.js:516:19)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/routes/message.route.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/util/middleware&route.js:12:22) stack: Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/route.js:202:15)
+    at Function.proto.<computed> [as get] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/index.js:516:19)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/routes/message.route.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/util/middleware&route.js:12:22) }
+{ time: [34m28-07-2022 17:00:19[39m level: [31merror[39m message: uncaughtException: Route.get() requires a callback function but got a [object Undefined]
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/route.js:202:15)
+    at Function.proto.<computed> [as get] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/index.js:516:19)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/routes/message.route.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/util/middleware&route.js:12:22) stack: Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/route.js:202:15)
+    at Function.proto.<computed> [as get] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/index.js:516:19)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/routes/message.route.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/util/middleware&route.js:12:22) }
+{ time: [34m28-07-2022 17:01:26[39m level: [31merror[39m message: uncaughtException: Route.get() requires a callback function but got a [object Undefined]
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/route.js:202:15)
+    at Function.proto.<computed> [as get] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/index.js:516:19)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/routes/message.route.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/util/middleware&route.js:12:22) stack: Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/route.js:202:15)
+    at Function.proto.<computed> [as get] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/index.js:516:19)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/routes/message.route.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/util/middleware&route.js:12:22) }
+{ time: [34m30-07-2022 01:44:11[39m level: [31merror[39m message: uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/route.js:202:15)
+    at Function.proto.<computed> [as post] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/index.js:516:19)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/routes/conversation.route.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/util/middleware&route.js:11:27) stack: Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/route.js:202:15)
+    at Function.proto.<computed> [as post] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/index.js:516:19)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/routes/conversation.route.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/util/middleware&route.js:11:27) }
+{ time: [34m30-07-2022 01:44:44[39m level: [31merror[39m message: uncaughtException: Route.get() requires a callback function but got a [object Undefined]
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/route.js:202:15)
+    at Function.proto.<computed> [as get] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/index.js:516:19)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/routes/conversation.route.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/util/middleware&route.js:11:27) stack: Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/route.js:202:15)
+    at Function.proto.<computed> [as get] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/index.js:516:19)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/routes/conversation.route.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/util/middleware&route.js:11:27) }
+{ time: [34m30-07-2022 01:47:23[39m level: [31merror[39m message: uncaughtException: Route.get() requires a callback function but got a [object Undefined]
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/route.js:202:15)
+    at Function.proto.<computed> [as get] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/index.js:516:19)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/routes/conversation.route.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/util/middleware&route.js:11:27) stack: Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/route.js:202:15)
+    at Function.proto.<computed> [as get] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/index.js:516:19)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/routes/conversation.route.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/util/middleware&route.js:11:27) }
+{ time: [34m30-07-2022 01:47:40[39m level: [31merror[39m message: uncaughtException: Route.get() requires a callback function but got a [object Undefined]
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/route.js:202:15)
+    at Function.proto.<computed> [as get] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/index.js:516:19)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/routes/conversation.route.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/util/middleware&route.js:11:27) stack: Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/route.js:202:15)
+    at Function.proto.<computed> [as get] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/index.js:516:19)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/routes/conversation.route.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/util/middleware&route.js:11:27) }
+{ time: [34m30-07-2022 01:48:51[39m level: [31merror[39m message: uncaughtException: Route.get() requires a callback function but got a [object Undefined]
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/route.js:202:15)
+    at Function.proto.<computed> [as get] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/index.js:516:19)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/routes/conversation.route.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/util/middleware&route.js:11:27) stack: Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/route.js:202:15)
+    at Function.proto.<computed> [as get] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/index.js:516:19)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/routes/conversation.route.js:7:8)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/util/middleware&route.js:11:27) }

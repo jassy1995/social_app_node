@@ -3,18 +3,13 @@ const express = require("express");
 const cors = require("cors");
 const fileUpload = require("express-fileupload");
 const helmet = require("helmet");
-const morgan = require("morgan");
-// const path = require("path");
+// const morgan = require("morgan");
 const postRoute = require("../routes/post.route");
 const userRoute = require("../routes/user.route");
 const authRoute = require("../routes/auth.route");
 const conversationRoute = require("../routes/conversation.route");
 const messageRoute = require("../routes/message.route");
-const orderRoute = require("../routes/order.route");
-const taskRoute = require("../routes/task.route");
-const propertyRoute = require("../routes/property.route");
 const error = require("../middleware/error");
-const clientKey = require("../routes/client-key.route");
 
 module.exports = function (app) {
   app.use(cors());
@@ -27,14 +22,10 @@ module.exports = function (app) {
       useTempFiles: true,
     })
   );
-  app.use("/api/keys", clientKey);
   app.use("/api/post", postRoute);
   app.use("/api/auth", authRoute);
   app.use("/api/user", userRoute);
   app.use("/api/conversation", conversationRoute);
   app.use("/api/message", messageRoute);
-  app.use("/api/tasks", taskRoute);
-  app.use("/api/properties", propertyRoute);
-  app.use("/api/orders", orderRoute);
   app.use(error);
 };

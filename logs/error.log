@@ -1,3 +1,0 @@
-{ time: [34m28-07-2022 16:34:22[39m level: [31merror[39m message: savedConversation is not definedsavedConversation is not defined stack: ReferenceError: savedConversation is not defined
-    at exports.userConversation (/Users/Apple/Desktop/project/social_app/server/controllers/conversation.controller.js:21:25)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5) }

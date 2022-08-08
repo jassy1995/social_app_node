@@ -1,11 +1,9 @@
 require("dotenv").config();
 const Post = require("../models/post.model");
-const Todo = require("../models/todo.model");
 const User = require("../models/user.model");
 const cloudinary = require("../util/cloudinary");
 const _ = require("lodash");
 
-// const validateCreatePost = require("../validator/post/createPost-validator");
 
 
 
@@ -23,23 +21,6 @@ exports.createPost = async (req, res, next) => {
   return res.send({ message: "Post Created", post });
 };
 
-// exports.getPaginatedTask = async (req, res, next) => {
-//   const { query } = req;
-//   console.log(query);
-//   const pageNumber = +query.pageNumber || 1;
-//   const pageSize = +query.pageSize || 4;
-//   const tasks = await Task.find()
-//     .skip(pageSize * (pageNumber - 1))
-//     .limit(pageSize);
-//   const countTasks = await Task.countDocuments();
-//   console.log(tasks);
-//   return res.send({
-//     tasks,
-//     countTasks,
-//     pageNumber,
-//     pages: Math.ceil(countTasks / pageSize),
-//   });
-// };
 
 exports.timeLinePost = async (req, res, next) => {
   const { query } = req;
@@ -54,13 +35,16 @@ exports.timeLinePost = async (req, res, next) => {
       return Post.find({ userId: friendId }).populate("userId").sort({ createdAt: -1 });
     })
   );
-  const allValue = [...post, ...friendsPost]
+
+  const allValue = [...post, ...friendsPost.flat()]
   let divide = _.chunk(allValue, pageSize);
+  const posts = divide[pageNumber - 1]
   return res
     .status(200)
     .send({
-      posts: divide[pageNumber - 1],
-      total_count: divide.length,
+      posts,
+      total_count: allValue.length,
+      end: posts.includes(allValue[allValue.length - 1]) ? true : false,
       message: "Post found",
     });
 };
@@ -134,172 +118,5 @@ exports.deletePost = async (req, res, next) => {
 };
 
 
-exports.getTodo = async (req, res, next) => {
-  const { query } = req;
-  const pageNumber = +query.pageNumber || 1;
-  const pageSize = +query.pageSize || 10;
-  const status = query?.status;
-  if (!!status && status !== 'all') {
-    const statusFilter = status ? { completed: status.trim() === 'completed' ? true : false } : {};
-    const todos = await Todo.find({ ...statusFilter })
-      .skip(pageSize * (pageNumber - 1))
-      .limit(pageSize);
-    const countTodo = await Todo.countDocuments({ ...statusFilter });
-    return res.send({
-      todos,
-      total_count: countTodo,
-      pageNumber,
-      total_page: Math.ceil(countTodo / pageSize),
-    });
-  } else {
-    const todos = await Todo.find()
-      .skip(pageSize * (pageNumber - 1))
-      .limit(pageSize);
-    const countTodo = await Todo.countDocuments();
-    return res.send({
-      todos,
-      total_count: countTodo,
-      pageNumber,
-      total_page: Math.ceil(countTodo / pageSize),
-    });
-  }
 
-}
 
-// exports.allProduct = async (req, res, next) => {
-//   const products = await Product.find();
-//   return res.send(products);
-// };
-
-// exports.productByCategory = async (req, res, next) => {
-//   const categories = await Product.find().distinct("category");
-//   return res.send(categories);
-// };
-
-// exports.filterProduct = async (req, res, next) => {
-//   const { query } = req;
-//   const pageSize = query.pageSize || PAGE_SIZE;
-//   const page = query.page || 1;
-//   const category = query.category || "";
-//   const price = query.price || "";
-//   const rating = query.rating || "";
-//   const order = query.order || "";
-//   const searchQuery = query.query || "";
-
-//   const queryFilter =
-//     searchQuery && searchQuery !== "all"
-//       ? {
-//           name: {
-//             $regex: searchQuery,
-//             $options: "i",
-//           },
-//         }
-//       : {};
-//   const categoryFilter = category && category !== "all" ? { category } : {};
-//   const ratingFilter =
-//     rating && rating !== "all"
-//       ? {
-//           rating: {
-//             $gte: Number(rating),
-//           },
-//         }
-//       : {};
-
-//   const priceFilter =
-//     price && price !== "all"
-//       ? {
-//           // 1-50
-//           price: {
-//             $gte: Number(price.split("-")[0]),
-//             $lte: Number(price.split("-")[1]),
-//           },
-//         }
-//       : {};
-
-//   const sortOrder =
-//     order === "featured"
-//       ? { featured: -1 }
-//       : order === "lowest"
-//       ? { price: 1 }
-//       : order === "highest"
-//       ? { price: -1 }
-//       : order === "toprated"
-//       ? { rating: -1 }
-//       : order === "newest"
-//       ? { createdAt: -1 }
-//       : { _id: -1 };
-
-//   const products = await Product.find({
-//     ...queryFilter,
-//     ...categoryFilter,
-//     ...priceFilter,
-//     ...ratingFilter,
-//   })
-//     .sort(sortOrder)
-//     .skip(pageSize * (page - 1))
-//     .limit(pageSize);
-
-//   const countProducts = await Product.countDocuments({
-//     ...queryFilter,
-//     ...categoryFilter,
-//     ...priceFilter,
-//     ...ratingFilter,
-//   });
-
-//   return res.send({
-//     products,
-//     countProducts,
-//     page,
-//     pages: Math.ceil(countProducts / pageSize),
-//   });
-// };
-
-// exports.getAdminProduct = async (req, res, next) => {
-//   const { query } = req;
-//   const page = query.page || 1;
-//   const pageSize = query.pageSize || PAGE_SIZE;
-
-//   const products = await Product.find()
-//     .skip(pageSize * (page - 1))
-//     .limit(pageSize)
-//     .sort({ createdAt: -1 });
-//   const countProducts = await Product.countDocuments();
-//   return res.send({
-//     products,
-//     countProducts,
-//     page,
-//     pages: Math.ceil(countProducts / pageSize),
-//   });
-// };
-
-// exports.productReview = async (req, res, next) => {
-//   const productId = req.params.id;
-//   const product = await Product.findById(productId);
-//   if (product) {
-//     if (product.reviews.find((x) => x.name === req.user.name)) {
-//       return res
-//         .status(400)
-//         .send({ message: "You already submitted a review" });
-//     }
-
-//     const review = {
-//       name: req.user.name,
-//       rating: Number(req.body.rating),
-//       comment: req.body.comment,
-//     };
-//     product.reviews.push(review);
-//     product.numReviews = product.reviews.length;
-//     product.rating =
-//       product.reviews.reduce((a, c) => c.rating + a, 0) /
-//       product.reviews.length;
-//     const updatedProduct = await product.save();
-//     return res.status(201).send({
-//       message: "Review Created",
-//       review: updatedProduct.reviews[updatedProduct.reviews.length - 1],
-//       numReviews: product.numReviews,
-//       rating: product.rating,
-//     });
-//   } else {
-//     res.status(404).send({ message: "Product Not Found" });
-//   }
-// };

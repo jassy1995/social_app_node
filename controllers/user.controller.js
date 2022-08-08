@@ -27,10 +27,30 @@ exports.updateUserInfo = async (req, res, next) => {
   }
 };
 
+
 exports.getUsers = async (req, res, next) => {
-  const users = await User.find({});
-  return res.send(users);
+  const { query } = req;
+  const pageNumber = +query.pageNumber || 1;
+  const pageSize = +query.pageSize || 5;
+  const countUser = await User.countDocuments();
+  const users = await User.find({ _id: { $ne: req.user._id } })
+    .skip(pageSize * (pageNumber - 1))
+    .limit(pageSize)
+    .sort({ createdAt: -1 });
+  return res
+    .status(200)
+    .send({
+      users,
+      total_count: countUser,
+      message: "user  found",
+    });
 };
+
+
+
+
+
+
 
 exports.getUser = async (req, res, next) => {
   const user = await User.findOne({ username: req.params.username });

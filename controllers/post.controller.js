@@ -44,7 +44,7 @@ exports.timeLinePost = async (req, res, next) => {
     .send({
       posts,
       total_count: allValue.length,
-      end: posts.includes(allValue[allValue.length - 1]) ? true : false,
+      end: posts && posts.includes(allValue[allValue.length - 1]) ? true : false,
       message: "Post found",
     });
 };

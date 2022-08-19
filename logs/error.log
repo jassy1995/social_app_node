@@ -119,3 +119,102 @@
     at Object.module.exports [as verify] (/Users/Apple/Desktop/project/social_app/server/node_modules/jsonwebtoken/verify.js:94:10)
     at exports.isAuth (/Users/Apple/Desktop/project/social_app/server/middleware/auth.js:7:9)
     at /Users/Apple/Desktop/project/social_app/server/node_modules/express-async-errors/index.js:17:20 }
+{ time: [34m09-08-2022 16:11:51[39m level: [31merror[39m message: Cannot destructure property 'result' of '(intermediate value)' as it is undefined.Cannot destructure property 'result' of '(intermediate value)' as it is undefined. stack: TypeError: Cannot destructure property 'result' of '(intermediate value)' as it is undefined.
+    at exports.instagramCrawler (/Users/Apple/Desktop/project/social_app/server/controllers/crawler.controller.js:8:13)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) }
+{ time: [34m15-08-2022 12:54:11[39m level: [31merror[39m message: Cannot find module './photos'
+Require stack:
+- /Users/Apple/Desktop/project/social_app/server/controllers/post.controller.js
+- /Users/Apple/Desktop/project/social_app/server/routes/post.route.js
+- /Users/Apple/Desktop/project/social_app/server/util/middleware&route.js
+- /Users/Apple/Desktop/project/social_app/server/index.jsCannot find module './photos'
+Require stack:
+- /Users/Apple/Desktop/project/social_app/server/controllers/post.controller.js
+- /Users/Apple/Desktop/project/social_app/server/routes/post.route.js
+- /Users/Apple/Desktop/project/social_app/server/util/middleware&route.js
+- /Users/Apple/Desktop/project/social_app/server/index.js stack: Error: Cannot find module './photos'
+Require stack:
+- /Users/Apple/Desktop/project/social_app/server/controllers/post.controller.js
+- /Users/Apple/Desktop/project/social_app/server/routes/post.route.js
+- /Users/Apple/Desktop/project/social_app/server/util/middleware&route.js
+- /Users/Apple/Desktop/project/social_app/server/index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:815:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:667:27)
+    at Module.require (internal/modules/cjs/loader.js:887:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at exports.createPhoto (/Users/Apple/Desktop/project/social_app/server/controllers/post.controller.js:122:18)
+    at /Users/Apple/Desktop/project/social_app/server/node_modules/express-async-errors/index.js:17:20
+    at Layer.handle [as handle_request] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/route.js:112:3)
+    at /Users/Apple/Desktop/project/social_app/server/node_modules/express-async-errors/index.js:17:20 }
+{ time: [34m15-08-2022 12:55:46[39m level: [31merror[39m message: Photo.insert is not a functionPhoto.insert is not a function stack: TypeError: Photo.insert is not a function
+    at exports.createPhoto (/Users/Apple/Desktop/project/social_app/server/controllers/post.controller.js:123:30)
+    at /Users/Apple/Desktop/project/social_app/server/node_modules/express-async-errors/index.js:17:20
+    at Layer.handle [as handle_request] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/route.js:112:3)
+    at /Users/Apple/Desktop/project/social_app/server/node_modules/express-async-errors/index.js:17:20
+    at Layer.handle [as handle_request] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/index.js:341:12)
+    at next (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/index.js:275:10) }
+{ time: [34m15-08-2022 13:10:41[39m level: [31merror[39m message: Photo.insert is not a functionPhoto.insert is not a function stack: TypeError: Photo.insert is not a function
+    at exports.createPhoto (/Users/Apple/Desktop/project/social_app/server/controllers/post.controller.js:125:9)
+    at /Users/Apple/Desktop/project/social_app/server/node_modules/express-async-errors/index.js:17:20
+    at Layer.handle [as handle_request] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/route.js:112:3)
+    at /Users/Apple/Desktop/project/social_app/server/node_modules/express-async-errors/index.js:17:20
+    at Layer.handle [as handle_request] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/index.js:341:12)
+    at next (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/index.js:275:10) }
+{ time: [34m15-08-2022 13:13:59[39m level: [31merror[39m message: Photo.insert is not a functionPhoto.insert is not a function stack: TypeError: Photo.insert is not a function
+    at exports.createPhoto (/Users/Apple/Desktop/project/social_app/server/controllers/post.controller.js:125:9)
+    at /Users/Apple/Desktop/project/social_app/server/node_modules/express-async-errors/index.js:17:20
+    at Layer.handle [as handle_request] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/route.js:112:3)
+    at /Users/Apple/Desktop/project/social_app/server/node_modules/express-async-errors/index.js:17:20
+    at Layer.handle [as handle_request] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/index.js:341:12)
+    at next (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/index.js:275:10) }
+{ time: [34m15-08-2022 14:20:42[39m level: [31merror[39m message: Photo.index is not a functionPhoto.index is not a function stack: TypeError: Photo.index is not a function
+    at exports.getPhoto (/Users/Apple/Desktop/project/social_app/server/controllers/post.controller.js:132:15)
+    at /Users/Apple/Desktop/project/social_app/server/node_modules/express-async-errors/index.js:17:20
+    at Layer.handle [as handle_request] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/route.js:112:3)
+    at /Users/Apple/Desktop/project/social_app/server/node_modules/express-async-errors/index.js:17:20
+    at Layer.handle [as handle_request] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/index.js:341:12)
+    at next (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/index.js:275:10) }
+{ time: [34m15-08-2022 14:27:31[39m level: [31merror[39m message: Photo.getCollection is not a functionPhoto.getCollection is not a function stack: TypeError: Photo.getCollection is not a function
+    at exports.getPhoto (/Users/Apple/Desktop/project/social_app/server/controllers/post.controller.js:131:15)
+    at /Users/Apple/Desktop/project/social_app/server/node_modules/express-async-errors/index.js:17:20
+    at Layer.handle [as handle_request] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/route.js:112:3)
+    at /Users/Apple/Desktop/project/social_app/server/node_modules/express-async-errors/index.js:17:20
+    at Layer.handle [as handle_request] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/index.js:341:12)
+    at next (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/index.js:275:10) }
+{ time: [34m15-08-2022 14:32:19[39m level: [31merror[39m message: Photo.collection is not a functionPhoto.collection is not a function stack: TypeError: Photo.collection is not a function
+    at exports.getPhoto (/Users/Apple/Desktop/project/social_app/server/controllers/post.controller.js:131:15)
+    at /Users/Apple/Desktop/project/social_app/server/node_modules/express-async-errors/index.js:17:20
+    at Layer.handle [as handle_request] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/route.js:112:3)
+    at /Users/Apple/Desktop/project/social_app/server/node_modules/express-async-errors/index.js:17:20
+    at Layer.handle [as handle_request] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/index.js:341:12)
+    at next (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/index.js:275:10) }
+{ time: [34m15-08-2022 15:43:14[39m level: [31merror[39m message: Cast to number failed for value "true" (type boolean) at path "id" for model "Photo"Cast to number failed for value "true" (type boolean) at path "id" for model "Photo" stack: CastError: Cast to number failed for value "true" (type boolean) at path "id" for model "Photo"
+    at model.Query.exec (/Users/Apple/Desktop/project/social_app/server/node_modules/mongoose/lib/query.js:4803:21)
+    at model.Query.Query.then (/Users/Apple/Desktop/project/social_app/server/node_modules/mongoose/lib/query.js:4902:15)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5) }

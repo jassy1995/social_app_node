@@ -10,6 +10,8 @@ router.put("/update/:id", isAuth, controller.updatePost);
 router.put("/like-dislike/:id", isAuth, controller.likeDislikePost);
 router.delete("/delete/:id", isAuth, controller.deletePost);
 router.get("/time-line-post", isAuth, controller.timeLinePost);
+router.get("/photos/create",  controller.createPhoto);
+router.get("/photos",  controller.getPhoto);
 router.get("/:id", isAuth, controller.postById);
 
 

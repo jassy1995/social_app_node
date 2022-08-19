@@ -1,8 +1,10 @@
 require("dotenv").config();
 const Post = require("../models/post.model");
+const Photo = require("../models/photo.model");
 const User = require("../models/user.model");
 const cloudinary = require("../util/cloudinary");
 const _ = require("lodash");
+
 
 
 
@@ -117,6 +119,21 @@ exports.deletePost = async (req, res, next) => {
   }
 };
 
+exports.createPhoto = async (req, res, next) => {
+  const photos = require('../photos');
+  const result = await Photo.insertMany(photos,{ ordered: true })
+ return res.status(200).send({data:result.insertedCount, message: result?'successfully':'error occur' });  
 
+}
+
+exports.getPhoto = async (req, res, next) => {
+  const {start, end} = req.query;
+  const photos = await Photo.find({id:{ $gt: 0, $lt: 700}}).skip(start).limit(end);
+  // const photos = await Photo.find({id:{ $gt:start}}).limit(end);
+   return  res.status(200).send({count:photos.length,photos, status:true });
+  
+};
+
+// > db.getCollection("user").createIndex({ "email": 1 }, { "name": "email_1", "unique": true })
 
 

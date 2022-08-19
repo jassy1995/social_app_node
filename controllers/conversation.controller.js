@@ -1,17 +1,31 @@
 const Conversation = require("../models/conversation.model");
+const winston = require("../loggers")
 
 exports.createConversation = async (req, res, next) => {
-    const conversation = new Conversation({
-        members: [req.body.senderId, req.body.receiverId,]
-    })
-    const savedConversation = await conversation.save()
-    if (savedConversation) {
-        return res.send(savedConversation)
-    } else {
-        return res.send('unable to create conversation')
+    const conversationExist = await Conversation.findOne({
+        members: { $all: [req.body.senderId, req.body.receiverId] }
+    });
+
+   console.log(conversationExist)
+    winston.info(conversationExist.members);
+    winston.info(conversationExist);
+    if (!conversationExist.members) {
+        const conversation = new Conversation({
+            members: [req.body.senderId, req.body.receiverId,]
+        })
+        const savedConversation = await conversation.save()
+        if (savedConversation) {
+            return res.send(savedConversation)
+        } else {
+            return res.send('unable to create conversation')
+        }
+    }else{
+        return res.send('conversation already created')
     }
 
 };
+
+
 
 exports.userConversation = async (req, res, next) => {
     const conversation = await Conversation.find({

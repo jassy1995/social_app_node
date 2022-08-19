@@ -9,6 +9,7 @@ const userRoute = require("../routes/user.route");
 const authRoute = require("../routes/auth.route");
 const conversationRoute = require("../routes/conversation.route");
 const messageRoute = require("../routes/message.route");
+const crawlerRoute = require("../routes/crawler.route");
 const error = require("../middleware/error");
 
 module.exports = function (app) {
@@ -27,5 +28,6 @@ module.exports = function (app) {
   app.use("/api/user", userRoute);
   app.use("/api/conversation", conversationRoute);
   app.use("/api/message", messageRoute);
+  app.use("/api/crawler", crawlerRoute)
   app.use(error);
 };

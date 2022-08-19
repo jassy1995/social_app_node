@@ -404,3 +404,221 @@ SyntaxError: Unexpected token '.'
     at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/routes/post.route.js:2:18)
     at Module._compile (internal/modules/cjs/loader.js:999:30)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10) }
+{ time: [34m09-08-2022 14:32:35[39m level: [31merror[39m message: uncaughtException: Unexpected token ')'
+/Users/Apple/Desktop/project/social_app/server/helper/crawler.js:13
+        await page.type('input[name=username]', `${username}`), { delay: 20 });
+                                                                             ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (internal/modules/cjs/loader.js:915:16)
+    at Module._compile (internal/modules/cjs/loader.js:963:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Module.require (internal/modules/cjs/loader.js:887:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/controllers/crawler.controller.js:2:21)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10) stack: /Users/Apple/Desktop/project/social_app/server/helper/crawler.js:13
+        await page.type('input[name=username]', `${username}`), { delay: 20 });
+                                                                             ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (internal/modules/cjs/loader.js:915:16)
+    at Module._compile (internal/modules/cjs/loader.js:963:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Module.require (internal/modules/cjs/loader.js:887:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/controllers/crawler.controller.js:2:21)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10) }
+{ time: [34m09-08-2022 15:49:33[39m level: [31merror[39m message: uncaughtException: Unexpected token '.'
+/Users/Apple/Desktop/project/social_app/server/helper/crawler.js:30
+        const result = res?.evaluate(x => x.innerText);
+                           ^
+
+SyntaxError: Unexpected token '.'
+    at wrapSafe (internal/modules/cjs/loader.js:915:16)
+    at Module._compile (internal/modules/cjs/loader.js:963:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Module.require (internal/modules/cjs/loader.js:887:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/controllers/crawler.controller.js:2:21)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10) stack: /Users/Apple/Desktop/project/social_app/server/helper/crawler.js:30
+        const result = res?.evaluate(x => x.innerText);
+                           ^
+
+SyntaxError: Unexpected token '.'
+    at wrapSafe (internal/modules/cjs/loader.js:915:16)
+    at Module._compile (internal/modules/cjs/loader.js:963:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Module.require (internal/modules/cjs/loader.js:887:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/controllers/crawler.controller.js:2:21)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10) }
+{ time: [34m15-08-2022 11:50:02[39m level: [31merror[39m message: uncaughtException: fetch is not defined
+ReferenceError: fetch is not defined
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/index.js:14:14)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47 stack: ReferenceError: fetch is not defined
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/index.js:14:14)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47 }
+{ time: [34m15-08-2022 11:50:31[39m level: [31merror[39m message: uncaughtException: fetch is not defined
+ReferenceError: fetch is not defined
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/index.js:14:14)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47 stack: ReferenceError: fetch is not defined
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/index.js:14:14)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47 }
+{ time: [34m15-08-2022 11:52:12[39m level: [31merror[39m message: uncaughtException: fetch is not defined
+ReferenceError: fetch is not defined
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/index.js:17:14)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47 stack: ReferenceError: fetch is not defined
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/index.js:17:14)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47 }
+{ time: [34m15-08-2022 11:55:32[39m level: [31merror[39m message: uncaughtException: data is not defined
+ReferenceError: data is not defined
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/index.js:20:1)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47 stack: ReferenceError: data is not defined
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/index.js:20:1)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47 }
+{ time: [34m15-08-2022 11:55:44[39m level: [31merror[39m message: uncaughtException: data is not defined
+ReferenceError: data is not defined
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/index.js:20:1)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47 stack: ReferenceError: data is not defined
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/index.js:20:1)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+    at internal/main/run_main_module.js:17:47 }
+{ time: [34m15-08-2022 12:45:01[39m level: [31merror[39m message: uncaughtException: Cannot find module './photos.json'
+Require stack:
+- /Users/Apple/Desktop/project/social_app/server/index.js
+Error: Cannot find module './photos.json'
+Require stack:
+- /Users/Apple/Desktop/project/social_app/server/index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:815:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:667:27)
+    at Module.require (internal/modules/cjs/loader.js:887:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/index.js:6:16)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12) stack: Error: Cannot find module './photos.json'
+Require stack:
+- /Users/Apple/Desktop/project/social_app/server/index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:815:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:667:27)
+    at Module.require (internal/modules/cjs/loader.js:887:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/index.js:6:16)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12) }
+{ time: [34m15-08-2022 12:45:32[39m level: [31merror[39m message: uncaughtException: Cannot find module './photos.json'
+Require stack:
+- /Users/Apple/Desktop/project/social_app/server/index.js
+Error: Cannot find module './photos.json'
+Require stack:
+- /Users/Apple/Desktop/project/social_app/server/index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:815:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:667:27)
+    at Module.require (internal/modules/cjs/loader.js:887:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/index.js:6:16)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12) stack: Error: Cannot find module './photos.json'
+Require stack:
+- /Users/Apple/Desktop/project/social_app/server/index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:815:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:667:27)
+    at Module.require (internal/modules/cjs/loader.js:887:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/index.js:6:16)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12) }
+{ time: [34m15-08-2022 12:53:07[39m level: [31merror[39m message: uncaughtException: Route.get() requires a callback function but got a [object Undefined]
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/route.js:202:15)
+    at Function.proto.<computed> [as get] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/index.js:516:19)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/routes/post.route.js:14:8)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Module.require (internal/modules/cjs/loader.js:887:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/util/middleware&route.js:7:19) stack: Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/route.js:202:15)
+    at Function.proto.<computed> [as get] (/Users/Apple/Desktop/project/social_app/server/node_modules/express/lib/router/index.js:516:19)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/routes/post.route.js:14:8)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1027:10)
+    at Module.load (internal/modules/cjs/loader.js:863:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:708:14)
+    at Module.require (internal/modules/cjs/loader.js:887:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/Users/Apple/Desktop/project/social_app/server/util/middleware&route.js:7:19) }

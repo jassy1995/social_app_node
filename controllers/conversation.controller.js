@@ -7,20 +7,19 @@ exports.createConversation = async (req, res, next) => {
     });
 
    console.log(conversationExist)
-    winston.info(conversationExist.members);
     winston.info(conversationExist);
-    if (!conversationExist.members) {
+    if (!conversationExist) {
         const conversation = new Conversation({
             members: [req.body.senderId, req.body.receiverId,]
         })
         const savedConversation = await conversation.save()
         if (savedConversation) {
-            return res.send(savedConversation)
+            return res.send({message:'created',result:savedConversation})
         } else {
             return res.send('unable to create conversation')
         }
     }else{
-        return res.send('conversation already created')
+        return res.send({message:'exist'})
     }
 
 };

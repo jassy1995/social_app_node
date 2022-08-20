@@ -1,13 +1,11 @@
 const Conversation = require("../models/conversation.model");
-const winston = require("../loggers")
+
 
 exports.createConversation = async (req, res, next) => {
     const conversationExist = await Conversation.findOne({
         members: { $all: [req.body.senderId, req.body.receiverId] }
     });
 
-   console.log(conversationExist)
-    winston.info(conversationExist);
     if (!conversationExist) {
         const conversation = new Conversation({
             members: [req.body.senderId, req.body.receiverId,]
